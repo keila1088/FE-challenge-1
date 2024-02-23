@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" src="./assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <style>
+    .attribution{
+      font-size: 10px;
+      position: absolute;
+      top: 95%;
+      left: 50%;
+    }
+    .h1-blueCard-styler{
+      margin-bottom: 0;
+      font-weight: normal;
+      font-size: 1.75rem;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+    .hanken-grotesk {
+      font-family: "Hanken Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      text-align: center;
+      box-shadow: -3px 5px 35px -10px rgba(33,58,145,0.56);
+      border-radius: 30px;
+    }
+    .blue-card{
+      color: #fff;
+      width: 50%;
+      background-color: #6742fd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 30px;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+    }
+    .style-circle{
+      padding: 8px 0;
+      width: 60%;
+      border-radius: 100%;
+      background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(69 32 179) 0%, rgb(103 66 253) 100%);
+    }
+    .principal-text-circle{
+      margin: 0;
+      font-size: 4rem;
+      padding-top: 2rem;
+    }
+    .secondary-text-circle{
+      margin: 0;
+      margin-bottom: 2rem;
+      color: #877df8;
+    }
+    .blueCard-header-styler{
+      font-weight: normal;
+      color: #cac2ff;
+    }
+    .p-bluecard-styler{
+      margin-bottom: 3rem;
+      width: 70%;
+      color: #cac2ff;
+      font-size: 14px;
+      margin-top: 1.5rem;
+    }
+    .whiteCard-container{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .internal-card-styler{
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+      margin: .5rem 0;
+    }
+    .align-internal-cards{
+      display: flex;
+      align-items: center;
+    }
+
+    .reaction-color{
+      color: #ff5555;
+    }
+    .memory-color{
+      color: #ffc66d;
+    }
+    .verbal-color{
+      color: #33bd9c;
+    }
+    .visual-color{
+      color: #393fbf;
+    }
+    .reaction-title-styler{
+      margin: 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    img{
+      padding-right: 4px;
+    }
+    .whiteCard-title{
+      text-align: left;
+      width: 100%;
+      padding-left: 4rem;
+    }
+    button{
+      margin-bottom: 4rem;
+      margin-top: 1rem;
+      width: 80%;
+      padding: 0.75rem;
+      border-radius: 25px;
+      background-color: #303b59;
+      border: none;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="hanken-grotesk">
+
+
+  <div class="card">
+    <div class="blue-card">
+      <h3 class="blueCard-header-styler">Your Result</h3>
+      <div class="style-circle">
+        <h1 class="principal-text-circle">76</h1>
+        <p class="secondary-text-circle">of 100</p>
+      </div>
+      <h1 class="h1-blueCard-styler">Great</h1>
+      <p class="p-bluecard-styler">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="whiteCard-container">
+      <h3 class="whiteCard-title">Summary</h3>
+      <div class="internal-card-styler" style="background-color: #fff6f5;">
+        <div class="align-internal-cards">
+          <img src="./assets/images/icon-reaction.svg"/>
+          <p class="reaction-title-styler reaction-color">Reaction</p>
+        </div>
+        <div class="align-internal-cards">
+          <p>80</p>
+          <p>/ 100</p>
+        </div>
+      </div>
+      <div class="internal-card-styler" style="background-color: #fffbf2;">
+        <div class="align-internal-cards">
+          <img src="./assets/images/icon-memory.svg"/>
+          <p class="reaction-title-styler memory-color">Memory</p>
+        </div>
+        <div class="align-internal-cards">
+          <p>92</p>
+          <p>/ 100</p>
+        </div>
+      </div>
+      <div class="internal-card-styler" style="background-color: #f2fbfa;">
+        <div class="align-internal-cards">
+          <img src="./assets/images/icon-verbal.svg"/>
+          <p class="reaction-title-styler verbal-color">Verbal</p>
+        </div>
+        <div class="align-internal-cards">
+          <p>61</p>
+          <p>/ 100</p>
+        </div>
+      </div>
+      <div class="internal-card-styler" style="background-color: #f3f3fc;">
+        <div class="align-internal-cards">
+          <img src="./assets/images/icon-visual.svg"/>
+          <p class="reaction-title-styler visual-color">Visual</p>
+        </div>
+        <div class="align-internal-cards">
+          <p>72</p>
+          <p>/ 100</p>
+        </div>
+      </div>
+      <button>
+        <a href="#" style="text-decoration: none; color: white;">Continue</a>
+      </button>
+    </div>
+  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">keila ceñal</a>.
+    </div>
+  </footer>
+</body>
+</html>
